@@ -3,10 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Fabric, initializeIcons } from "@fluentui/react";
+
+initializeIcons();
 
 ReactDOM.render(
   <React.StrictMode>
+    <Fabric>
     <App />
+    </Fabric>
   </React.StrictMode>,
   document.getElementById('root')
 );
